@@ -1,0 +1,184 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/mainStyle.css">
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Start nav -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="#" class="nav-brand"><img src="./assets/images/logo.svg" alt=""></a>
+            
+             <button type="button" class="navbar-toggler nav_big_btn"  data-toggle="collapse" data-target="#listToggle">
+                <span class="navbar-toggler-icon"><img src="./assets/images/icon-menu.svg" alt=""></span>
+             </button>
+
+             <button type="button" class="navbar-toggler nav_small_btn"  onclick="showSmall()">
+                <span class="navbar-toggler-icon"><img src="./assets/images/icon-menu.svg" alt=""></span>
+             </button>
+             
+
+             <div class="navbar-collapse collapse" id="listToggle">
+                 <ul class="navbar-nav ml-auto" >
+                    <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">New</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Populer</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Trending</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Categories</a></li>
+                 </ul>
+             </div>
+        </div>
+    </nav>
+    <!-- End nav -->
+    <!-- menu in small screen -->
+    <div class="menu_small" id="listSmallScreen">
+        <div class="icon"><img src="./assets/images/icon-menu-close.svg" alt="" onclick="hideSmall()"></div>
+        <ul class="list-unstyled" >
+           <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+           <li class="nav-item"><a href="#" class="nav-link">New</a></li>
+           <li class="nav-item"><a href="#" class="nav-link">Populer</a></li>
+           <li class="nav-item"><a href="#" class="nav-link">Trending</a></li>
+           <li class="nav-item"><a href="#" class="nav-link">Categories</a></li>
+        </ul>
+    </div>
+    <!--end menu in small screen -->
+
+    <!-- content -->
+    <section class="content">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-8  col-md-12 col-sm-12">
+                    <!-- header -->
+                        <header>
+                            <div class="header_img"></div>
+                            <div class="header_content">
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-12">
+                                        <h1>The Bright Future Of Web 3.0?</h1>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12">
+                                        <div class="text">
+                                            <p>
+                                                We div into the next evolution of the web that claims to put
+                                                the power of platform back into the hands of the people. But is it 
+                                                really fulfilling its promise ?
+                                            </p>
+                                            
+                                             <button class="btn">Read More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                    <!-- end header -->
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <!-- aside -->
+                    <section class="aside">
+
+                        <h2>New</h2>
+
+                        <div class="item">
+                            <h5>Hydrogin vs electric cars</h5>
+                            <p>will hydrogin cars ever catch up to EVs?</p>
+                        </div>
+
+                        <div class="item">
+                            <h5>The Downsides of Al Artistry</h5>
+                            <p>Whate are the possible adverse effects of on-demand Al image generation ?</p>
+                        </div>
+
+                        <div class="item">
+                            <h5>Is VC Funding Drying Up?</h5>
+                            <p>Whate are the possible adverse effects of on-demand Al image generation ?</p>
+                        </div>
+
+                    </section>
+                    <!-- End aside -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End content -->
+
+
+    <!-- props -->
+     <section class="properties">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="prop card flex-row  border-0 ">
+                        <img src="./assets/images/image-retro-pcs.jpg" alt="" class="card-img img-fluid">
+                        <div class="details card-body">
+                            <span class="number">01</span>
+                            <h6 class="card-title"><a href="#">Reviving Retro PCs</a></h6>
+                            <p class="card-text">Whats happens when old PCs are given modern upgrades</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4  col-md-6 col-sm-12">
+                    <div class="prop card flex-row  border-0">
+                        <img src="./assets/images/image-top-laptops.jpg" alt="" class="card-img img-fluid">
+                        <div class="details card-body">
+                            <span class="number">02</span>
+                            <h6 class="card-title"><a href="#">Reviving Retro PCs</a></h6>
+                            <p class="card-text">Whats happens when old PCs are given modern upgrades</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4  col-md-6 col-sm-12">
+                    <div class="prop card flex-row  border-0">
+                        <img src="./assets/images/image-gaming-growth.jpg" alt="" class="card-img img-fluid">
+                        <div class="details card-body">
+                            <span class="number">03</span>
+                            <h6 class="card-title"><a href="#">Reviving Retro PCs</a></h6>
+                            <p class="card-text">Whats happens when old PCs are given modern upgrades</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+     </section>
+    <!-- props -->
+
+    <!-- scripts -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+     crossorigin="anonymous"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+
+    <script>
+        function showSmall(){
+            document.getElementById("listSmallScreen").classList.toggle("menu_small_show")
+        }
+        function hideSmall(){
+            document.getElementById("listSmallScreen").classList.remove("menu_small_show")
+        }
+    </script> 
+</body>
+</html>
