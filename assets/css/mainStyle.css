@@ -19,20 +19,26 @@ body{
    background-color: #fff;
    height: 100%;
    width: 0;
+   display: none;
    position: absolute;
    top:0;
    right: 0;
    z-index: 9999;
    padding-top: 20px;
 
-   transition: all .6s ease;
-   -webkit-transition: all .6s ease;
-   -moz-transition: all .6s ease;
-   -o-transition: all .6s ease;
 }
 .menu_small_show{
-    width: 80%;
+    
+    display: block;
+    animation-name: changewidth;
+    animation-duration: .6s;
+    animation-delay: .1s;
+    animation-fill-mode:forwards;
 }
+@keyframes changewidth {
+    0% {width:0 ;}
+    100%{width:80%;}
+  }
 .menu_small ul a{
    color: #000;
 }
